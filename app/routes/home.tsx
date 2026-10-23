@@ -1,13 +1,14 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import { Utilisateurs } from "../utilisateurs/utilisateurs";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Gestion GoRest - useEffect" },
+    { name: "description", content: "Intégration d'API avec useEffect" },
   ];
 }
 
+// On retourne simplement le composant enfant qui gère tout son cycle de vie seul
 export default function Home() {
-  return <Welcome />;
+  return <Utilisateurs />;
 }
